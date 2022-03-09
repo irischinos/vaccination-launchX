@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+  --text: 'Montserrat', sans-serif;
+  --title-text: 600;
+  --normal-text: 500;
+  --small-text: 400; /* regular text*/
+  --blue-color: #1b215c;
+  --sky-blue: #cee6eb;
+  --purple-color: #472fb3;
+
+}
+/* ---------------------- NAV MENÚ ------------------------*/
+h1 {
+  color: #1b215c;
+}
+/* ---------------------- IMG & FECHAS --------------------*/
+
+/* ---------------------- IMGS VACCINES (4) ---------------*/
+
+/* ---------------------- NEEDS -- ------------------------*/
+
+/* ---------------------- PREPARATIONS --------------------*/
+
+/* ---------------------- EMERGENCY CONTACT----------------*/
+
+/* ---------------------- FOOTER --------------------------*/
