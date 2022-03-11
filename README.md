@@ -1,6 +1,6 @@
 # vaccination-launchX
 
-Práctica CSS de una página de vacunación, ejercicio de LaunchX powered by Microsoft, utilizando HTML y CSS.
+Práctica CSS de una página de vacunación, ejercicio de LaunchX powered by Microsoft, utilizando HTML y CSS (bonus: Bootstrap 4).
 
 Caso : "Vaccination" | Vacunación | Proyecto de website
 
