@@ -6,97 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    
     <title>Vaccination</title>
   </head>
-  <body class="body">
-    <nav class="navbar navbar-expand-lg navbar-light fixed">
-      <a class="navbar-brand" id="vaccination" href="#vaccination">Vaccination</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Database <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Regulation</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Hoax Buster</button>
-        </form>
-      </div>
-    </nav>
 
+  <body>
     <div class="container">
+
+      <div class="row nav-menu fixed-top">
+        <div class="col-4"><a class="navbar-brand" id="vaccination"  href="#vaccination">Vaccination</a></div>
+        <div class="col-4">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto lt-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Database <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Regulation</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-4 d-flex align-items-center">
+          <button class="btn-purple my-2 my-lg-0" type="submit">Hoax Buster</button>
+        </div>
+      </div>
+    
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12-xs">
-          <h1>Fight Virus<br> With Vaccines</h1>
-          <p>Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br> family get infected</p>
+          <h1 class="none">Fight Virus<br> With Vaccines</h1>
+          <h1 class="lt-blue size-title-main">Fight Virus<br> With Vaccines</h1>
+          <p class="lt-grey lt-rounded">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br> family get infected</p>
+          <br><br>
           <div class="row">
             <div class="col-12">
               <div class="row">
-                <div class="col-6">
-                  <img src="assets/img/icons/shield.png" alt="shield-icon" width="20;">
-                  <span>Best protection</span> 
+                <div class="col-6 d-flex align-items-center lt-blue">
+                  <i class="fa-solid fa-shield gold-icon"></i><span class="lt-rounded lt-normal">Best protection</span>
                 </div>
-                <div class="col-6">
-                  <img src="assets/img/icons/star.png" alt="star-icon" width="20;">
-                  <span>Selected Vaccines</span> <br>              
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="lt-rounded lt-normal">Selected Vaccines</span> <br>              
                 </div>
               </div>
+
+              <br><br><br>
               <div class="row">
-                <div class="col-12">
-                  <img src="assets/img/icons/time.png" alt="clock-icon" width="20;">
-                  <span>Schedule your vaccinations</span>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center">
+                  <div class="row d-none d-lg-block">
+                    <div class="col-lg-12">
+                      <div class="d-flex">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="lt-blue lt-text lt-icon-md font-w-lg">Schedule your vaccinations</span><br><br>
+                      </div>
+                      <div class="row div-cont align-items-center">
                         <div class="col-3">
                           <div class="row">
                             <div class="col-3">
-                              <img src="assets/img/icons/place.png" alt="place-icon" width="20;">
+                              <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div class="col-9">
-                              <span>Location</span>
-                              <p>Jakarta Utara</p>
+                              <span class="lt-p1 lt-lightgrey font-w-xs lt-rounded">Location</span> <br>
+                              <p class="lt-icon-md font-w-lg lt-blue lt-text">Jakarta Utara</p>
                             </div>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="row">
                             <div class="col-3">
-                              <img src="assets/img/icons/calendar.png" alt="calendar-icon" width="20;">
+                              <i class="fa-solid fa-calendar-days"></i>
                             </div>
                             <div class="col-9">
-                              <span>Date</span>
-                              <p>08 July 2021</p>
+                              <span class="lt-p1 lt-lightgrey font-w-xs lt-rounded">Date</span> <br>
+                              <p class="lt-icon-md font-w-lg lt-blue lt-text">08 July 2021</p>
                             </div>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="row">
                             <div class="col-3">
-                              <img src="assets/img/icons/write.png" alt="pencil-icon" width="20;">
+                              <i class="fa-solid fa-pencil"></i>
                             </div>
                             <div class="col-9">
-                              <span>Vaccine Type</span>
-                              <p>Moderna</p>
+                              <span class="lt-p1 lt-lightgrey font-w-xs lt-rounded">Vaccine Type</span>
+                              <p class="lt-icon-md font-w-lg lt-blue lt-text">Moderna</p>
                             </div>
                           </div>
                         </div>
                         <div class="col-3">
-                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+                          <div class="row">
+                            <div class="col-12">
+                              <button class="btn-purple my-2 my-lg-0" type="submit">Submit</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -107,7 +126,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12-xs">
-          <img src="assets/img/doc1.png" alt="doc con jeringa" class="img-fluid">
+          <img src="assets/img/nurse.png" alt="doc con jeringa" class="img-fluid">
         </div>
       </div>
       
@@ -119,249 +138,273 @@
         <div class="col-1"></div>
       </div>
 
-      <div class="row">
+      <div class="row mb-20">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <p>Why should I vaccine?</p>
-          <p>In order to avoid any doubts about getting the COVID-19 <br>
+          <p class="lt-blue lt-h2 font-w-lg">Why should I vaccine?</p>
+          <p class="lt-grey lt-rounded">In order to avoid any doubts about getting the COVID-19 <br>
           vaccine, identify the following 4 benefits of COVID-19 <br>
         vaccination:</p>
         </div>
         <div class="col-lg-6 col-md-6">
-          <img src="assets/img/shape1.png" alt="shape 1" class="d-sm-none d-md-block d-none d-sm-block">
+          <img src="assets/img/shape1.png" alt="shape 1" class="d-flex ml-auto">
         </div>
       </div>
-
+      
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="card bg-light mb-3 h-100" style="max-width: 18rem;">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <br><br>
+          <div class="mt-1 card bg-light mb-3 h-100" style="max-width: 18rem;">
             <div class="card-body">
-              <img src="assets/img/icons/list.png" alt="list icon" width="20;">
-              <h5 class="card-title">Minimize the spread of viruses</h5>
-              <p class="card-text">Vaccine has been proven effective to prevent someone from getting infected woth Coronavirus.</p>
+              <i class="fa-solid fa-list"></i> <br><br>
+              <p class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Minimize the spread of viruses</p>
+              <p class="card-text lt-grey lt-icon-sm lt-rounded">Vaccine has been proven effective to prevent someone from getting infected woth Coronavirus.</p>
+            </div> 
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <br><br>
+          <div class="mt-1 card bg-light mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-body">
+              <i class="fa-solid fa-address-book"></i> <br><br>
+              <p class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Forming antibodies</p>
+              <p class="card-text lt-grey lt-icon-sm lt-rounded">COVID-19 vaccine proven to help shape antibody response for immune system</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <br><br>
+          <div class="mt-1 card bg-light mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-body">
+              <i class="fa-solid fa-users"></i> <br><br>
+              <p class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Protecting people nearby</p>
+              <p class="card-text lt-grey lt-icon-sm lt-rounded">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="card bg-light mb-3 h-100" style="max-width: 18rem;">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <br><br>
+          <div class="mt-1 card bg-light mb-3 h-100" style="max-width: 18rem;">
             <div class="card-body">
-              <img src="assets/img/icons/shield.png" alt="shield-icon" width="20;">
-              <h5 class="card-title">Forming antibodies</h5>
-              <p class="card-text">COVID-19 vaccine proven to help shape antibody response for immune system</p>
+              <i class="fa-solid fa-chart-line"></i> <br><br>
+              <p class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Creating group immunity</p>
+              <p class="card-text lt-grey lt-icon-sm lt-rounded">COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="card bg-light mb-3 h-100" style="max-width: 18rem;">
-            <div class="card-body">
-              <img src="assets/img/icons/group.png" alt="group-icon" width="20;">
-              <h5 class="card-title">Protecting people nearby</h5>
-              <p class="card-text">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="card bg-light mb-3 h-100" style="max-width: 18rem;">
-            <div class="card-body">
-              <img src="assets/img/icons/statistics.png" alt="statistics-icon" width="20;">
-              <h5 class="card-title">Creating group immunity</h5>
-              <p class="card-text">COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> <br><br><br><br>
 
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <img src="assets/img/shape2.png" alt="shape 2" class="d-sm-none d-md-block d-none d-sm-block">
+          <img src="assets/img/shape2.png" alt="shape 2">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <p>Preparations Before Vaccine</p>
-          <p>the success of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <img src="assets/img/doc2.png" alt="doctor 2" >
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <!-- first dropdown -->
-          <div class="dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle w-50 type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Avoid alcoholic beverages
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
-            </div>
-          </div>
-          <!-- second dropdown -->
-          <div class="dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle w-50" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Avoid stress
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Stress has a profound effect on immune work. <br>Moreover, prolonged stress can increase cortisol <br> production and oxidative stress in the body.</button>
-            </div>
-          </div>
-          <!-- third dropdown -->
-          <div class="dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle w-50" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Eat healthy food
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Vegetables</button>
-            </div>
-          </div>
-          <!-- fourth dropdown -->
-          <div class="dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle w-50" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Get enough sleep
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Stress has a profound effect on immune work. <br>Moreover, prolonged stress can increase cortisol <br> production and oxidative stress in the body.</button>
-            </div>
-          </div>
-          <!-- fifth dropdown -->
-          <div class="dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle w-50" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Exercise or physical activity
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Stress has a profound effect on immune work. <br>Moreover, prolonged stress can increase cortisol <br> production and oxidative stress in the body.</button>
-            </div>
-          </div>
+          <p class="lt-blue lt-h2 font-w-lg">Preparations Before Vaccine</p>
+          <p class="lt-grey lt-rounded">the success of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
         </div>
       </div>
 
+      <div class="row d-flex align-items-end">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img src="assets/img/doc2.png" alt="doctor 2">
+        </div>
+
+        <div class="mt-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-12">
+              <!-- 1st dropdown -->
+              <button class="w-100 btn-dropdown mb-3">
+                <div class="row d-flex align-items-center">
+                  <div class="col-2">
+                    <i class="fa-solid fa-chart-line d-flex align-items-center"></i>
+                  </div>
+                  <div class="col-8">
+                    <div class="col-lg-8 mx-auto">Avoid alcoholic beverages</div>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa-regular fa-square-caret-down "></i>
+                  </div>
+                </div>
+              </button>
+              <!-- 2nd dropdown -->
+              <button class="w-100 btn-dropdown mb-3">
+                <div class="row d-flex align-items-center">
+                  <div class="col-2">
+                    <i class="fa-solid fa-square-xmark d-flex align-items-center"></i>
+                  </div>
+                  <div class="col-8">Avoid stress</div>
+                  <div class="col-2">
+                    <i class="fa-regular fa-square-caret-down"></i>
+                  </div>
+                </div>
+              </button>
+              <!-- 3rd dropdown -->
+              <button class="w-100 btn-dropdown mb-3">
+                <div class="row d-flex align-items-center">
+                  <div class="col-2">
+                    <i class="fa-solid fa-square-poll-vertical d-flex align-items-center"></i>
+                  </div>
+                  <div class="col-8">Eat healthy food</div>
+                  <div class="col-2">
+                    <i class="fa-regular fa-square-caret-down"></i>
+                  </div>
+                </div>
+              </button>
+              <!-- 4th dropdown -->
+              <button class="w-100 btn-dropdown mb-3">
+                <div class="row d-flex align-items-center">
+                  <div class="col-2">
+                    <i class="fa-solid fa-circle-check d-flex align-items-center"></i>
+                  </div>
+                  <div class="col-8">Get enough sleep</div>
+                  <div class="col-2">
+                    <i class="fa-regular fa-square-caret-down"></i>
+                  </div>
+                </div>
+              </button>
+              <!-- 5th dropdown -->
+              <button class="w-100 btn-dropdown mb-3">
+                <div class="row d-flex align-items-center">
+                  <div class="col-2">
+                    <i class="fa-solid fa-heart d-flex align-items-center"></i>
+                  </div>
+                  <div class="col-8">Exercise activity</div>
+                  <div class="col-2">
+                    <i class="fa-regular fa-square-caret-down"></i>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <p>Emergency Contact</p>
-          <p>Contact one of the contacts below if you or your family feel <br>
+          <p class="lt-blue lt-h2 font-w-lg">Emergency Contact</p>
+          <p class="lt-grey lt-rounded">Contact one of the contacts below if you or your family feel <br>
           unwell and have similar symptoms such as Covid-19, make <br>
           sure you also take care of yourself before reporting us:</p>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <img src="assets/img/shape1.png" alt="shape 1" class="d-sm-none d-md-block d-none d-sm-block">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img src="assets/img/shape1.png" alt="shape 1" class="d-flex ml-auto d-sm-none d-md-block d-none d-sm-block">
         </div>
-      </div>
+      </div> 
 
-      <div class="row">
+      <div class="row d-flex align-items-end">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="row">
             <!-- first card (call) -->
-            <div class="col-6">
+            <div class="col-6 pd-4">
               <div class="card bg-light mb-3 h-10" style="max-width: 15rem;">
                 <div class="row card-body">
                   <div class="col-3">
-                    <img src="assets/img/icons/telephone-call.png" alt="phone-icon" width="20;">
+                    <i class="fa-solid fa-phone"></i>
                   </div>
                   <div class="col-9">
-                    <h5 class="card-title">Call</h5>
-                    <p class="card-text">021.123.145.14</p>
-                  </div>
-                  <button class="btn btn-outline-success my-2 my-sm-0 mx-auto w-75" type="submit">Call Now</button>
+                    <h5 class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Call</h5>
+                    <p class="card-text lt-icon-xs">021.123.145.14</p>
+                  </div> <br><br><br>
+                  <button class="btn-white my-2 my-lg-0 mx-auto w-75" type="submit">Call Now</button>
                 </div>
               </div>
             </div>
             <!-- 2nd card (chat) -->
-            <div class="col-6">
+            <div class="col-6 pd-4">
               <div class="card bg-light mb-3 h-10" style="max-width: 15rem;">
                 <div class="row card-body">
                   <div class="col-3">
-                    <img src="assets/img/icons/chat.png" alt="chat-icon" width="20;">
+                    <i class="fa-solid fa-comment-dots"></i>
                   </div>
                   <div class="col-9">
-                    <h5 class="card-title">Chat</h5>
-                    <p class="card-text">021.123.145.14</p>
-                  </div>
-                  <button class="btn btn-outline-success my-2 my-sm-0 mx-auto w-75" type="submit">Chat Now</button>
+                    <h5 class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Chat</h5>
+                    <p class="card-text lt-icon-xs">021.123.145.14</p>
+                  </div> <br><br><br>
+                  <button class="btn-purple my-2 my-lg-0 mx-auto w-75" type="submit">Chat Now</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <!-- first card (call) -->
-            <div class="col-6">
+            <!-- 3rd card (videocall) -->
+            <div class="col-6 pd-4">
               <div class="card bg-light mb-3 h-10" style="max-width: 15rem;">
                 <div class="row card-body">
                   <div class="col-3">
-                    <img src="assets/img/icons/video-camera.png" alt="videocall-icon" width="20;">
+                    <i class="fa-solid fa-video"></i>
                   </div>
                   <div class="col-9">
-                    <h5 class="card-title">Videocall</h5>
-                    <p class="card-text">021.123.145.14</p>
-                  </div>
-                  <button class="btn btn-outline-success my-2 my-sm-0 mx-auto w-75" type="submit">Video Call Now</button>
+                    <h5 class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Videocall</h5>
+                    <p class="card-text lt-icon-xs">021.123.145.14</p>
+                  </div> <br><br><br>
+                  <button class="btn-white my-2 my-lg-0 mx-auto w-75" type="submit">Video Call</button>
                 </div>
               </div>
             </div>
-            <!-- 2nd card (chat) -->
-            <div class="col-6">
+            <!-- 4th card (message) -->
+            <div class="col-6 pd-4">
               <div class="card bg-light mb-3 h-10" style="max-width: 15rem;">
                 <div class="row card-body">
                   <div class="col-3">
-                    <img src="assets/img/icons/email.png" alt="email-icon" width="20;">
+                    <i class="fa-solid fa-envelope"></i>
                   </div>
                   <div class="col-9">
-                    <h5 class="card-title">Message</h5>
-                    <p class="card-text">021.123.145.14</p>
-                  </div>
-                  <button class="btn btn-outline-success my-2 my-sm-0 mx-auto w-75" type="submit">Message Now</button>
+                    <h5 class="card-title lt-icon-md lt-blue font-w-md lt-rounded">Message</h5>
+                    <p class="card-text lt-icon-xs">021.123.145.14</p>
+                  </div> <br><br><br>
+                  <button class="btn-white my-2 my-lg-0 mx-auto w-75" type="submit">Message Now</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <img src="assets/img/doc3.png" alt="doctor 3">
+          <img src="assets/img/doc3.png" alt="doctor 3" class="d-flex ml-auto">
         </div>
-      </div>
+      </div> <br><br><br>
+    </div>
 
-
-      <footer>
+    <footer class="footer">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="row">
               <div class="col">
-                <h5>Vaccination</h5>
-                <p>Our goal is to help the <br> world free from the <br> ongoing pandemic</p>
+                <p class="lt-purple font-w-xl lt-icon-lg">Vaccination</p>
+                <p class="lt-icon-sm lt-rounded lt-grey">Our goal is to help the <br> world free from the <br> ongoing pandemic</p>
               </div>
               <div class="col"></div>
               <div class="col">
-                <h6>About</h6>
-                <a href="#">About us</a>
-                <a href="#">Features</a>
-                <a href="#">News & Blog</a>
+                <h6 class="lt-blue font-w-lg lt-icon-mlg">About</h6>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">About us</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">Features</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">News & Blog</a>
               </div>
               <div class="col">
-                <h6>Company</h6>
-                <a href="#">How We Work?</a>
-                <a href="#">Capital</a>
-                <a href="#">Secutiry</a>
+                <h6 class="lt-blue font-w-lg lt-icon-mlg">Company</h6>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">How We Work?</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">Capital</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">Secutiry</a>
               </div>
               <div class="col">
-                <h6>Support</h6>
-                <a href="#">FAQs</a>
-                <a href="#">Support Center</a>
-                <a href="#">Contact Us</a>
+                <h6 class="lt-blue font-w-lg lt-icon-mlg">Support</h6>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">FAQs</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">Support Center</a> <br>
+                <a href="#" class="lt-icon-sm lt-rounded lt-footer lt-grey">Contact Us</a>
               </div>
             </div>
             <div class="row">
-              <div class="col-6">©2021 Vaccination. All rights reserved </div>
+              <div class="col-6 lt-icon-sm lt-rounded lt-footer lt-grey">©2021 Vaccination. All rights reserved </div>
               <div class="col-3">
-                <a href="#">Terms & Agreements</a>
+                <a href="#" class="col-6 lt-icon-sm lt-rounded lt-footer lt-grey">Terms & Agreements</a>
               </div>
               <div class="col-3">
-                <a href="#">Privacy Policy</a>
+                <a href="#" class="col-6 lt-icon-sm lt-rounded lt-footer lt-grey">Privacy Policy</a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-
-    </div>
+      </div>
+    </footer>
 
     
     
@@ -373,6 +416,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

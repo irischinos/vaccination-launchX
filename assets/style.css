@@ -1,27 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 :root {
   --text: 'Montserrat', sans-serif;
+  --text-rounded: 'Fredoka', sans-serif;
+  --bold-text: 800;
+  --semi-bold-text: 700;
   --title-text: 600;
   --normal-text: 500;
   --small-text: 400; /* regular text*/
   --blue-color: #1b215c;
   --sky-blue: #cee6eb;
   --purple-color: #472fb3;
+  --grey-color: #67666b;
+  --lightgrey-color: #8e8c96;
+  --lightergrey-color: #e2e0e9;
 
 }
 /* ---------------------- NAV MENÚ ------------------------*/
-h1 {
-  color: #1b215c;
+
+.btn-purple {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  border: 0.5px solid var(--purple-color);
+  font-family: var(--text);
 }
-/* ---------------------- IMG & FECHAS --------------------*/
+  .btn-purple:hover {
+    background-color: white;
+    color: var(--purple-color);
+    transition-duration: 0.5s;
+    }
+.btn-white {
+  background-color: white;
+  color: var(--purple-color);
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  border: 0.5px solid var(--purple-color);
+  font-family: var(--text);
+}
+  .btn-white:hover {
+    background-color: var(--purple-color);
+    color: white;
+    transition-duration: 0.5s;
+    }
+.btn-dropdown {
+  background-color: white;
+  border: 0.6px solid var(--lightergrey-color);
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 1em;
+}
+.none {
+  color: white;
+}
 
-/* ---------------------- IMGS VACCINES (4) ---------------*/
+.nav-menu {
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 10px; /* added padding */
+}
+.lt-nav {
+  color: var(--grey-color);
+  font-weight: var(--title-text);
+  font-family: var(--text-rounded);
+}
 
-/* ---------------------- NEEDS -- ------------------------*/
+#vaccination {
+  color: var(--purple-color);
+  font-weight: var(--semi-bold-text);
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
 
-/* ---------------------- PREPARATIONS --------------------*/
+/* ----------------------- FONT STYLES --------------------*/
 
-/* ---------------------- EMERGENCY CONTACT----------------*/
+.lt-grey { color: var(--grey-color); }
+.lt-purple { color: var(--purple-color); }
+.lt-skyblue { color: var(--sky-blue); }
+.lt-blue { color: var(--blue-color); }
+.lt-lightgrey { color: var(--lightgrey-color); }
 
+.lt-rounded { font-family: var(--text-rounded); } /* Fredoka (rounded) */
+.lt-text { font-family: var(--text); } /* Montserrat font */
+
+/* Widths */
+.font-w-xs { font-weight: var(--small-text);  }
+.font-w-sm { font-weight: var(--normal-text); }
+.font-w-md { font-weight: var(--title-text); }
+.font-w-lg{ font-weight: var(--semi-bold-text); }
+.font-w-xl { font-weight: var(--bold-text); }
+
+/* Sizes */
+.lt-h1 { font-size: 3rem } /* Fight Virus */
+.lt-h2 { font-size: 2rem } /* Why should */
+.lt-p1 { font-size: 1rem } /* Let's stop... */
+.lt-icon-xxs { font-size: 0.6rem } /* Cards Minimize the spread */
+.lt-icon-xs  { font-size: 0.7rem } /*  */
+.lt-icon-sm  { font-size: 0.9rem } /* Best protection */ /* Cards Vaccie has beenproven*/
+.lt-icon-md  { font-size: 1.1rem } /* Schedule your */
+.lt-icon-mlg { font-size: 1.2rem }
+.lt-icon-lg  { font-size: 1.4rem } /* Jakarta Utara */
+
+.lt-normal {
+  font-weight: var(--title-text);
+  font-size: 0.9rem;
+}
+  .size-title-main {
+    font-size: 3rem;
+    font-weight: var(--bold-text);
+  }
+  .size-title-sub { /* para el footer*/
+    font-size: 2rem;
+  }
+  .sm { font-size: 0.7rem; }
+  .md { font-size: 1rem; }
+  .big { font-size: 2rem; }
+
+/* ---------------------- ICONS SHAPES --------------------*/
+.fa-shield, .fa-star {
+  color: gold;
+  padding: 0.5em;
+  background: rgba( 253, 203, 8, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba(223, 186, 68, 0.37);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 5px;
+}
+
+.blue-shield {
+  color: var(--purple-color);
+  padding: 0.5em;
+  background: rgba(79, 103, 168, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(76, 59, 223, 0.37);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 5px;
+}
+
+/* With blur */
+.fa-clock {
+  color: var(--purple-color);
+  padding: 0.5em;
+  background: rgba(79, 103, 168, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(76, 59, 223, 0.37);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 5px;
+}
+/* Without blur */
+.fa-location-dot, 
+.fa-calendar-days,
+.fa-pencil,
+.fa-list,
+.fa-address-book,
+.fa-users,
+.fa-chart-line,
+.fa-phone,
+.fa-comment-dots,
+.fa-video,
+.fa-envelope,
+.fa-square-xmark,
+.fa-square-poll-vertical,
+.fa-circle-check,
+.fa-heart {
+  color: var(--purple-color);
+  padding: 0.5em;
+  background: rgba(79, 103, 168, 0.2);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 5px;
+}
+
+.fa-square-caret-down {
+  color: var(--purple-color);
+  padding: 0.3em;
+  background: rgba(79, 103, 168, 0.2);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 5px;
+}
+/* ---------------------- GLASSMORPH SQUARE ---------------*/
+.div-cont {
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 10px; /* added padding */
+  width: 150%;
+  position: sticky;
+  z-index: 99999;
+}
+
+/* ---------------------- CARDS (4) -----------------------*/
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+}
+.card-body:hover {
+  border: 1px solid lightgrey;
+  background-color: white;
+  cursor: pointer;
+  transform: translateY(-10%);
+  transition: .4s cubic-bezier(.5,.03,.41,1);
+  border-radius: 5px;
+}
 /* ---------------------- FOOTER --------------------------*/
+.footer {
+  background-color: var(--sky-blue);
+  padding: 2em;
+}
+
+.lt-footer:hover {
+  color: var(--purple-color);
+  text-decoration: none;
+}
