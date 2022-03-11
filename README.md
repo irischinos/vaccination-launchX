@@ -13,10 +13,14 @@ Caso : "Vaccination" | Vacunación | Proyecto de website
 
 ### Resumen del proyecto
 Vaccination es un sitio web en donde puedes consultar horarios para la aplicación de tu vacuna, así como recomendaciones de las mejores vacunas, sugerencias de autocuidado antes de su aplicación, y contacto de emergencia.
+
 ### Planeación de campaña de vacunación
 
 
 ### Maquetación HTML y estilos con CSS
-
+1. <a href="https://github.com/irischinos/vaccination-launchX/blob/main/index.html">Código HTML</a> <br>
+2. <a href="https://github.com/irischinos/vaccination-launchX/blob/main/assets/style.css">Código CSS</a> 
 
 ### Despliegue de página
+Realizada en Github pages. <br>
+Puedes ver la página web <a href="https://irischinos.github.io/vaccination-launchX/">aquí</a>
